@@ -1,0 +1,31 @@
+GET http://localhost:8000/ads
+
+###
+
+POST http://localhost:8000/ad
+Content-Type: application/json
+
+{
+      "title": "Motorcycle",
+      "description":
+        "It's a motorcycle",
+      "owner": "motorcycle.seller@gmail.com",
+      "price": 5000,
+      "picture":
+        "https://images.caradisiac.com/images/8/6/0/1/198601/S0-arch-1s-keanu-reeves-devoile-son-ultime-creation-730556.jpg",
+      "location": "Nîmes",
+      "createdAt": "2023-11-14T10:46:15.922Z"
+}
+
+###
+
+DELETE http://localhost:8000/ads/1
+
+###
+
+PATCH http://localhost:8000/ads/1
+Content-Type: application/json
+
+{
+    "title": "Super Bike"
+}
